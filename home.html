@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale+1.0">
+		<title>Talor Swift</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	
+		<div class="container-navbar">
+			<div class="navbar">
+				<img src="image/logo.png" class="logo">
+				<nav>
+					<ul id="menuList">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="timeline.html">Album</a></li>
+						<li><a href="album.html">Discography</a></li>
+					</ul>
+				</nav>
+				<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+			</div>
+			
+			<div class="row">
+				<div class="col-1">
+					<h2>Taylor Swift</h2>
+					<p>Welcome, swiftie!<br/>
+						Because life are happy, free, confused, and lonely at the same time.<br/>
+						Let's sing along together and have fun!</p>
+					<button onclick="playAudio()" type="button">Start now</button>
+					<audio id="myAudio" src="audio/Fearless.mp3" preload="auto"></audio>
+				</div>
+				<div class="col-2">
+					<img src="image/background.jpeg" class="controller">
+				</div>
+			</div>
+			
+			<div class="social-links">
+				<a href="https://www.instagram.com/taylorswift/?hl=id"> <img src="image/instagram.png"> </a>
+				<a href="https://twitter.com/taylorswift13"> <img src="image/twitter.png"> </a>
+			</div>
+		</div>
+
+
+		
+	  
+		
+		<script type="text/javascript">
+			var menuList = document.getElementById("menuList");
+			menuList.style.maxHeight = "0px";
+			function togglemenu(){
+				if(menuList.style.maxHeight == "0px"){
+					menuList.style.maxHeight = "130px";
+				} else {
+					menuList.style.maxHeight = "0px";
+				}
+			}
+
+			function playAudio(){
+				return myAudio.paused ? myAudio.play() : myAudio.pause();
+			};
+			
+		</script>
+	</body>
+</html>
