@@ -63,6 +63,17 @@ body {
   align-items: center;
 }
 
+.tm-section-5 {
+  height: 790px;
+  background-image: url(../Lover/image/Lover.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
 .tm-color-primary {
   color: #cc0064;
 }
